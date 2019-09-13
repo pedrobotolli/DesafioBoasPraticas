@@ -6,10 +6,34 @@
 </head>
 
 <body>
-    <h1>Faça o teste de </h1>
-    <form action="POST">
-        <label for=""></label>
-        <input type="text">
+    <h1>Descubra se você sobreviveria no Titanic:</h1>
+    <form method="POST" action="{{url_for('input_data')}}">
+        <label for="Pclass">Classe</label>
+        <input type="text" name="Pclass" id="Pclass">
+        <label for="Name">Nome</label>
+        <input type="text" name="Name" id="Name">
+        <label for="Sex">Sexo</label>
+        <select name="Sex" id="Sex">
+            <option value="male" selected>Masculino</option>
+            <option value="female">Feminino</option>
+        </select>
+        <label for="Age">Sexo</label>
+        <input type="number" class="Age" id="Age">
+        <label for="SibSp">SibSp</label>
+        <input type="text" name="SibSp" id="SibSp">
+        <label for="Parch">Parch</label>
+        <input type="text" name="Parch" id="Parch">
+        <label for="Ticket">Ticket</label>
+        <input type="text" name="Ticket" id="Ticket">
+        <label for="Fare">Tarifa</label>
+        <input type="number" name="Fare" id="Fare">
+        <label for="Cabin">Cabine</label>
+        <input type="text" name="Cabin" id="Cabin">
+        <label for="Embarked">Embarcado</label>
+        <input type="text" name="Embarked" id="Embarked">
+        <input type="submit" value="Enviar">
+
+
     </form>
 
 </body>
